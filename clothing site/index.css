@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(220, 220, 220);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#header_comp_name {
+  background-color: red;
+  height: 100vh;
+  height: 70px;
+  width: 23vw;
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  z-index: 1;
+  transform: skew(-30deg);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#header_comp_name p {
+  position: absolute;
+  left: 120px;
+  top: -10px;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-family: "Sora", sans-serif;
+  font-family: tsushima3;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  justify-self: center;
+  align-self: center;
+}
+#header_link {
+  background-color: black;
+  height: 800px;
+  width: 220px;
+  transform: rotateZ(30deg);
+  position: absolute;
+  top: -120px;
+  left: -80px;
+  overflow: hidden;
+  color: white;
+}
+#header_link ul {
+  list-style: none;
+  color: rgb(142, 142, 142);
+  font-family: tsushima3;
+  transform: rotateZ(-30deg);
+  position: absolute;
+  top: 218px;
+  left: 8px;
+  font-size: small;
+}
+
+#header_link ul li {
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  position: relative;
+  transition: color 1s ease-in-out; /* Ensure color transition works */
+}
+/* #header_link ul li:hover {
+  color: red;
+} */
+#header_link ul li:before {
+  content: ""; /* Ensure the pseudo-element is displayed */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%; /* Initial width */
+  height: 100%;
+  background-color: red; /* Use background-color instead of border */
+  transition: width 1s ease-in-out; /* Transition for width change */
+  z-index: -1; /* Place it behind the text */
+}
+#header_link ul li:hover {
+  color: white; /* Uncomment if you want the text color to change on hover */
+}
+#header_link ul li:hover:before {
+  width: 100%; /* Final width on hover */
+  filter: drop-shadow(0 0 25px red);
+}
+#header_link ul li:active {
+  color: black;
+  background-color: red;
+  box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+  transition: 0.2s all ease;
+}
+/* #header_link ul li span {
+  position: absolute;
+  display: block;
+}
+#header_link ul li span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, red);
+}
+#header_link ul li:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+#header_link ul li span:nth-child(2) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, red);
+}
+#header_link ul li:hover span:nth-child(2) {
+  right: 100%;
+  transition: 1s;
+} */

@@ -1,0 +1,61 @@
+.next_to_header {
+  position: relative;
+  height: 300px;
+  width: 150px;
+  background-color: red;
+  top: 33%;
+  left: 11%;
+  transform: rotateZ(30deg);
+  transform: skew(-30deg);
+  border: 2px solid red;
+  z-index: 1;
+  overflow: hidden;
+}
+.second_next_to_header {
+  position: relative;
+  height: 571px;
+  top: -325px;
+  left: 28%;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  transform: rotateZ(30deg);
+  transform: skew(-30deg);
+  z-index: 1;
+  overflow: hidden;
+}
+.third_next_to_header {
+  position: relative;
+  height: 500px;
+  width: 150px;
+  background-color: rgb(0, 0, 255);
+  z-index: 1;
+  top: -70%;
+  left: 27%;
+  transform: rotateZ(30deg);
+  transform: skew(-30deg);
+  overflow: hidden;
+}
+.fourth_next_to_header {
+  position: absolute;
+  height: 500px;
+  width: 150px;
+  background-color: rgb(255, 0, 0);
+  z-index: 1;
+  top: 2.8%;
+  left: 53.5%;
+  rotate: 120deg;
+  transform: skew(30deg);
+  overflow: hidden;
+}
+.fifth_next_to_header {
+  position: absolute;
+  height: 400px;
+  width: 150px;
+  background-color: rgb(255, 0, 0);
+  z-index: 1;
+  top: 9.5%;
+  right: 1%;
+  rotate: 120deg;
+  transform: skew(30deg);
+  overflow: hidden;
+}
